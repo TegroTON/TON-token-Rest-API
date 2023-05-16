@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
 
-  <h3 align="center">TON/TGR Rest API </h3>
+  <h3 align="center">TON Jetton — Rest API open-source</h3>
 
   <p align="center">
     A simple and efficient solution for interacting with the TON Network
