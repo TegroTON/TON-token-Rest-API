@@ -1,10 +1,8 @@
 <br/>
 <p align="center">
-
-  <h3 align="center">TON Jetton — Rest API open-source</h3>
-
+  <h3 align="center">TON Jetton — Rest API Open-Source</h3>
   <p align="center">
-    A simple and efficient solution for interacting with the TON Blockchain
+    An efficient and straightforward solution for interacting with the TON Blockchain
     <br/>
     <br/>
     <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Report Bug</a>
@@ -22,42 +20,40 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
+* [Expanded Usage Instructions](#expanded-usage-instructions)
+* [Enhanced Contribution Guidelines](#enhanced-contribution-guidelines)
+* [Licensing Details](#licensing-details)
+* [Acknowledgements](#acknowledgements-the-authors)
 
 ## About The Project
 
-This development was the result of a long unsuccessful process of finding a workable solution for interfacing with the TON Network and servicing balances, payments and transactions of TON coins and TGR tokens.
-This solution allows you to easily set up wallet creation, balance checking, payment sending, and transaction statistics output in PHP.
+This project emerged from the need for a reliable and efficient way to interface with the TON Network, managing balances, payments, and transactions of TON coins and TGR tokens. It provides a user-friendly PHP interface for setting up wallet creation, balance checking, payment sending, and viewing transaction statistics.
 
 ## Built With
 
-The docker container is written in .JS and communicates with the jsonRPC of the TON network. The user part is implemented in PHP.
+The project comprises a docker container developed in .JS, which interfaces with the TON network's jsonRPC. The user interface is built using PHP for ease of use and accessibility.
 
 ## Getting Started
 
-Check the version of docker, it must be the latest version
+Ensure your docker version is up to date:
 ```sh
 docker -v
 ```
-For example:
+Example output:
 Docker version 23.0.6, build ef23cbc
 
-### Prerequisites
+## Prerequisites
 
-Docker must be installed on the server.
-If iptables is used, one of the ports that will be used in the script must be open in it. 
-For example: 5885
+Docker installed on the server.
+Open the necessary port in iptables, e.g., 5885.
 
-### Installation
+## Installation
+1. Obtain an API Key from http://toncenter.com/api or set up your own ton-http API.
 
-1. Get an API Key at [http://toncenter.com/api](http://toncenter.com/api) if you do not plan to setup your own ton-http API.
+2. Set up the ton-server:
 
-2. Installing and running the ton-server
-Upload ton-server to your server.
+- Upload ton-server to your server.
+- Navigate to the ton-server folder:
 
 Go to the ton-server folder:
 ```sh
@@ -90,7 +86,6 @@ curl -sL https://ton-blockchain.github.io/global.config.json > private/mainnet.j
 ```sh
 ./configure.py
 ```
-
 4. Open .env and change the TON_API_HTTP_PORT port to any free port, for example 5885.
 
 5. If you do not have docker-compose installed, you can do it with the command below:
@@ -104,39 +99,67 @@ docker-compose build
 ```sh
 docker-compose up -d
 ```
+## Expanded Usage Instructions
 
-## Usage
+1. **Editing the PHP Script:**
+   - Locate the `php/index.php` file in your project directory.
+   - Update the following configurations:
+     a) Insert your API Key for the TON API service at https://toncenter.com/api/v2/jsonRPC. Alternatively, if you are using a custom ton-http API, modify the host details accordingly.
+     b) Identify the section in the script where actions are defined. Uncomment the lines corresponding to the actions you want to perform (e.g., wallet creation, balance inquiry). Ensure you input the correct parameters in these lines for accurate functioning.
 
-1. Edit the file php/index.php by filling the following:
-a) API KEY for https://toncenter.com/api/v2/jsonRPC or change the host to your own ton-http API;
-b) uncomment the lines for required action and edit the proper values.
+2. **Deploying the Script:**
+   - Once the `php/index.php` file is configured, prepare to upload it to your server.
+   - Transfer the entire "php" folder to a directory on your server that is accessible via the web. This ensures that the script can be executed through a web interface.
 
-2. Upload the "php" folder to the web-accessible place on your server.
+3. **Running the Script:**
+   - After uploading, navigate to the location of the `index.php` file through your web browser.
+   - Execute the script by accessing its URL. The script will interact with the TON Blockchain as per the configured actions and parameters.
 
-3. Run the script and get the rest.
+## Enhanced Contribution Guidelines
 
-## Contributing
+Contributions are a vital part of the open-source community, fostering learning, inspiration, and creativity. Here's how you can contribute:
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/ShaanCoding/ReadME-Generator/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
-* Please make sure you check your spelling and grammar.
-* Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/ShaanCoding/ReadME-Generator/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
+* **Suggesting Changes:**
+  - If you have ideas for improvements or notice any issues, please feel free to [open an issue](https://github.com/ShaanCoding/ReadME-Generator/issues/new) on our GitHub repository. This could include adding new features or removing existing ones.
+  - When suggesting changes, please be clear and concise in your descriptions to facilitate understanding and implementation.
 
-### Creating A Pull Request
+* **Before Contributing:**
+  - Ensure your contributions are well-considered and carefully planned.
+  - Pay attention to spelling and grammar in your contributions to maintain the quality of documentation.
+  - For each suggestion or improvement, create a separate pull request (PR). This helps in better tracking and managing changes.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+* **Adhering to Conduct:**
+  - Before you submit your first contribution, please read through our [Code Of Conduct](https://github.com/ShaanCoding/ReadME-Generator/blob/main/CODE_OF_CONDUCT.md). This ensures a respectful and collaborative environment for all contributors.
 
-## License
+### Step-by-Step Guide for Pull Requests
 
-Distributed under the MIT License. See [LICENSE](https://github.com/ShaanCoding/ReadME-Generator/blob/main/LICENSE.md) for more information.
+1. **Forking the Project:**
+   - Begin by forking the repository. This creates a copy of the project in your GitHub account, allowing you to make changes without affecting the original.
 
-## Authors
+2. **Creating a Feature Branch:**
+   - In your forked repository, create a new branch for your feature or fix. Use the command: `git checkout -b feature/AmazingFeature` (replace 'AmazingFeature' with a descriptive name for your feature).
 
-* **Lana Cool** - *Developer* - [Lana Cool](https://github.com/lana4cool/) - *Telegram bots on PHP*
+3. **Committing Changes:**
+   - Make your changes in the new branch and commit them with a clear and descriptive message, using: `git commit -m 'Add some AmazingFeature'`.
 
+4. **Pushing to GitHub:**
+   - Push the changes to your GitHub repository using: `git push origin feature/AmazingFeature`. 
 
+5. **Opening a Pull Request:**
+
+   - Once your feature is ready and pushed to GitHub, navigate to the original repository you forked.
+   - Click on the 'Pull Request' button and then on 'New Pull Request'.
+   - Select your 'feature/AmazingFeature' branch and provide a detailed description of the changes you've made.
+   - Submit the pull request for review by the project maintainers.
+
+## Licensing Details
+
+This project is distributed under the MIT License, offering wide-reaching flexibility and freedom for use and modification.
+See [LICENSE](https://github.com/ShaanCoding/ReadME-Generator/blob/main/LICENSE.md) for more information.
+
+## Acknowledgements the Authors
+
+   - Primary Developer: [Lana Cool](https://github.com/lana4cool/)
+   - Expertise: Development of Telegram bots using PHP.
+   - GitHub Profile: Lana Cool
+   - Lana has been instrumental in developing and maintaining this project, ensuring it remains a robust and user-friendly tool for interacting with the TON Blockchain.
