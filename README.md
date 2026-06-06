@@ -5,13 +5,13 @@
     An efficient and straightforward solution for interacting with the TON Blockchain
     <br/>
     <br/>
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Report Bug</a>
+    <a href="https://github.com/TegroTON/TON-token-Rest-API/issues">Report Bug</a>
     .
-    <a href="https://github.com/ShaanCoding/ReadME-Generator/issues">Request Feature</a>
+    <a href="https://github.com/TegroTON/TON-token-Rest-API/issues">Request Feature</a>
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/ShaanCoding/ReadME-Generator/total) ![Contributors](https://img.shields.io/github/contributors/ShaanCoding/ReadME-Generator?color=dark-green) ![License](https://img.shields.io/github/license/ShaanCoding/ReadME-Generator) 
+![Downloads](https://img.shields.io/github/downloads/TegroTON/TON-token-Rest-API/total) ![Contributors](https://img.shields.io/github/contributors/TegroTON/TON-token-Rest-API?color=dark-green) ![License](https://img.shields.io/github/license/TegroTON/TON-token-Rest-API) 
 
 ## Table Of Contents
 
@@ -120,7 +120,7 @@ docker-compose up -d
 Contributions are a vital part of the open-source community, fostering learning, inspiration, and creativity. Here's how you can contribute:
 
 * **Suggesting Changes:**
-  - If you have ideas for improvements or notice any issues, please feel free to [open an issue](https://github.com/ShaanCoding/ReadME-Generator/issues/new) on our GitHub repository. This could include adding new features or removing existing ones.
+  - If you have ideas for improvements or notice any issues, please feel free to [open an issue](https://github.com/TegroTON/TON-token-Rest-API/issues/new) on our GitHub repository. This could include adding new features or removing existing ones.
   - When suggesting changes, please be clear and concise in your descriptions to facilitate understanding and implementation.
 
 * **Before Contributing:**
@@ -129,7 +129,7 @@ Contributions are a vital part of the open-source community, fostering learning,
   - For each suggestion or improvement, create a separate pull request (PR). This helps in better tracking and managing changes.
 
 * **Adhering to Conduct:**
-  - Before you submit your first contribution, please read through our [Code Of Conduct](https://github.com/ShaanCoding/ReadME-Generator/blob/main/CODE_OF_CONDUCT.md). This ensures a respectful and collaborative environment for all contributors.
+  - Before you submit your first contribution, please read through our [Code Of Conduct](https://github.com/TegroTON/TON-token-Rest-API/blob/main/CODE_OF_CONDUCT.md). This ensures a respectful and collaborative environment for all contributors.
 
 ### Step-by-Step Guide for Pull Requests
 
@@ -155,7 +155,7 @@ Contributions are a vital part of the open-source community, fostering learning,
 ## Licensing Details
 
 This project is distributed under the MIT License, offering wide-reaching flexibility and freedom for use and modification.
-See [LICENSE](https://github.com/ShaanCoding/ReadME-Generator/blob/main/LICENSE.md) for more information.
+See [LICENSE](https://github.com/TegroTON/TON-token-Rest-API/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgements the Authors
 
@@ -163,3 +163,12 @@ See [LICENSE](https://github.com/ShaanCoding/ReadME-Generator/blob/main/LICENSE.
    - Expertise: Development of Telegram bots using PHP.
    - GitHub Profile: Lana Cool
    - Lana has been instrumental in developing and maintaining this project, ensuring it remains a robust and user-friendly tool for interacting with the TON Blockchain.
+## 🌐 Tegro Ecosystem
+
+Part of the open-source **Tegro** DeFi & Web3 ecosystem:
+
+- 🔁 **DEX (Tegro Finance)** — https://tegro.finance
+- 💳 **Payments (Tegro Money)** — https://tegro.money
+- 👛 **Wallet** — https://t.me/TegroMoneyBot
+- 💬 **Community** — https://t.me/TegroMoney
+- 🏠 **All open-source repos** — https://github.com/TegroTON
